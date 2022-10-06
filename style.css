@@ -59,11 +59,12 @@ a {
 }
 
 .photoblog {
-    margin: 9px;
+    margin: 10px auto;
     background-color: pink;
     padding: 30px;
     padding: 9px;
     border-radius: 3px;
+    width: 80%;
 }
 
 .blue {
@@ -74,23 +75,36 @@ a {
 
 .item {
     display: flex;
-    margin: 0px 20px;
+    margin: 0px auto;
     gap: 5px;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 80%;
 }
-
-.images {
-    height: 250px;
+.img{
     width: 300px;
+    height: 250px;
     border-radius: 9px;
 }
-
-.images:hover{
-    filter: grayscale(0.5);
-
+.parent{
+    position: relative;
+    float:left;
 }
+.parent:hover{
+    filter: grayscale(1);
+}
+.parent:hover 
+.images
+  {
+  display: block;
+  }
 
+.parent .images {
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+}
 .letscap {
     display: flex;
     justify-content: center;
