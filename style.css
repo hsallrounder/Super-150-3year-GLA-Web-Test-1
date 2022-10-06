@@ -1,108 +1,169 @@
-header{
-    background-color: rgb(36, 13, 13);
-    height: 80px;
-    display: flex;
-}
-body{
-    font-family: 'Poppins', sans-serif;
-    background-image: url(/img/bgimage.jpg);
-}
-html {
-
-    scroll-padding-top: 70px;
-
-    scroll-behavior: smooth;
-
-}
-.left a{
-    text-decoration: none;
-    color: white;
-}
-.left {
-    position: absolute;
-    left: 30px;
-    top: 8px;
-    /* border: 2px solid red; */
-    display: inline-block;
-}
-.left div{
-    position: absolute;
-    left: 100px;
-    top: 35px;
-    display: inline-block;
-}
-.left img {
-    width: 50px;
-}
-
-.left div {
-    text-align: center;
-    line-height: 12px;
-    font-size: 26px;
-}
-
-.mid {
-    display: block;
-    width: 50%;
-    margin: auto auto;
-    /* border: 2px solid green; */
-    position: sticky;
-}
-
-.navbar {
-    display: inline-block;
-}
-
-.navbar li {
-    display: inline-block;
-    font-size: 11px;
-}
-
-.navbar li a {
-    color: white;
-    text-decoration: none;
-    padding: 34px 23px;
-    font-size: 20px;
-}
-
-.navbar li a:hover {
-    color: #29d9d5;
-}
-
-.right {
-    position: absolute;
-    right: 34px;
-    top: 28px;
-    display: inline-block;
-    /* border: 2px solid yellow; */
-    display: inline-block;
-}
-.btn {
-    font-family: 'Poppins';
-    background-color: rgb(36, 13, 13);
-    border-color: #29d9d5;
-    margin: 0px 9px;
-    color: #29d9d5;
-    padding: 4px 14px;
-    border: 2px solid grey;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    color:  rgb(36, 13, 13);
-    background-color: #29d9d5;
-}
-.pblog{
+body {
     background-color: white;
-    height: 1000px;
-    border: 2px solid red;
+    font-size: 70%;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.pink{
-    height: 80px;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-top: 5px;
-    background-color: rgba(244, 192, 192, 0.902);
+
+nav {
+    display: flex;
+    height: 10vh;
+    background-color: rgb(36, 13, 13);
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+.col {
+    color: rgb(8, 143, 143);
+    font-size: 40px;
+}
+
+.text {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    margin: 0px 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navitem {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.buttonnav {
+    background-color: transparent;
+    color: #29d9d5;
+    border: 1px solid #29d9d5;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+.photoblog {
+    margin: 9px;
+    background-color: pink;
+    padding: 30px;
+    padding: 9px;
+    border-radius: 3px;
+}
+
+.blue {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(5, 5, 95);
+}
+
+.item {
+    display: flex;
+    margin: 0px 20px;
+    gap: 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.images {
+    height: 250px;
+    width: 300px;
+    border-radius: 9px;
+}
+
+.images:hover{
+    filter: grayscale(0.5);
+
+}
+
+.letscap {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    background: url("https://images.unsplash.com/photo-1623323650038-2368bcf1652b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") no-repeat;
+    box-shadow: inset 0px 0px 100em 0px rgb(1, 247, 243, 0.4);
+    background-size: cover;
+}
+
+.hedsky {
+    color: #29d9d5;
+    font-size: 20px;
+}
+
+.hedwhite {
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.contain {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+
+.navitem>a:hover {
+    color: #29d9d5;
+}
+
+.buttonnav:hover {
+    background-color: #29d9d5;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+}
+
+.first,
+.second,
+.third {
+    width: 30vw;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid #29d9d5;
+    background-color: transparent;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid #29d9d5;
+    outline: none;
+}
+
+input:active {
+    border: 1px solid #29d9d5;
+}
+
+.icons {
+    font-size: 20px;
+    color: #29d9d5;
+}
+
+h1 {
+    font-size: 20px;
 }
