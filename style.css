@@ -7,6 +7,9 @@ body {
     box-sizing: border-box;
 }
 
+.navitem a{
+    font-size: 20px;
+}
 nav {
     display: flex;
     height: 10vh;
