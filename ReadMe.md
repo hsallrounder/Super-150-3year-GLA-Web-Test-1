@@ -60,3 +60,5 @@ https://forms.gle/cgC8Csgzr4ZdyMj7A
 5 marks - photo grid
 
 5 marks - Banner and Footer
+
+Solution: https://633eff31690edb20aec12042--preeminent-duckanoo-5aa6c5.netlify.app/
